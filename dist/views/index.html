@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layuiAdmin std - 通用后台管理模板系统（iframe标准版）</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../layuiadmin/style/admin.css" media="all">
+	<link rel="stylesheet" href="../layuiadmin/style/xiangmu.css" media="all">
+	<link rel="stylesheet" href="../layuiadmin/style/global.css" media="all">
+  
+  <script>
+  /^http(s*):\/\//.test(location.href) || alert('请先部署到 localhost 下再访问');
+  </script>
+</head>
+<body class="layui-layout-body">
+  
+  <div id="LAY_app">
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header" style="background-color: #3c8dbc;">
+        <!-- 头部区域 -->
+        <ul class="layui-nav layui-layout-left">
+          <li class="layui-nav-item layadmin-flexible" lay-unselect>
+            <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
+              <i class="layui-icon layui-icon-shrink-right" style="color: #fff;" id="LAY_app_flexible"></i>
+            </a>
+          </li>
+        </ul>			
+					<!-- 头部右边 -->
+        <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
+          <li class="layui-nav-item layui-hide-xs" lay-unselect>
+            <a href="javascript:;" layadmin-event="theme">
+              <i class="layui-icon layui-icon-theme" style="color: #fff; font-size: 14px; font-weight:bold;">视频教程</i>
+            </a>
+          </li>
+          <li class="layui-nav-item layui-hide-xs" lay-unselect>
+            <a href="javascript:;" layadmin-event="note">
+              <i class="layui-icon layui-icon-note" style="color: #fff; font-size: 14px; font-weight:bold;">开发文档</i>
+            </a>
+          </li>
+          <li class="layui-nav-item layui-hide-xs" lay-unselect>
+            <a href="javascript:;" layadmin-event="fullscreen">
+              <i class="layui-icon layui-icon-screen-full" style="font-size: 14px; color: #fff; font-weight:bold;  ">全屏显示</i>
+            </a>
+          </li>
+          <li class="layui-nav-item" lay-unselect>
+            <a href="javascript:;">
+							<img src="../layuiadmin/style/res/profile.jpg" class="layui-nav-img"/>
+              <cite style="color:#fff; font-weight:bold;">诺依</cite>
+            </a>
+            <dl class="layui-nav-child">
+              <dd><a lay-href="set/user/info.html">基本资料</a></dd>
+              <dd><a lay-href="set/user/password.html">修改密码</a></dd>
+              <hr>
+              <dd layadmin-event="logout" style="text-align: center;"><a>退出</a></dd>
+            </dl>
+          </li>     
+        </ul>		
+      </div>
+      
+      <!-- 侧边菜单 -->
+      <div class="layui-side layui-side-menu">
+        <div class="layui-side-scroll">
+          <div class="layui-logo" lay-href="home/console.html" style="background-color:#367fa9;">
+            <span >RuoYi</span>
+          </div>
+			
+          <ul class="layui-nav layui-nav-tree" lay-shrink="all" id="LAY-system-side-menu" lay-filter="layadmin-system-side-menu">
+            <div class="geren" >
+            	<div class="gerenxx">
+            		<div class="tupian"><img src="../layuiadmin/style/res/profile.jpg" class="layui-nav-img"/></div>
+            		<div class="gerenxx_left">
+            			<ul>
+            				<li class="xiangqing">admin</li>
+            				<li class="xiangqing1"><i class="layui-icon layui-icon-circle-dot" style="font-size: 12px; color: #01AAED;"></i> 在线&nbsp; <i class="layui-icon layui-icon-spread-left" style="font-size: 12px; color: red;"></i> 注销</li>
+            			</ul>
+            		</div>
+            	</div>
+            </div>
+						<li data-name="home" class="layui-nav-item layui-nav-itemed">
+              <a href="javascript:;" lay-tips="主页" lay-direction="2">
+                <i class="layui-icon layui-icon-home"></i>
+                <cite>主页</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd data-name="console" class="layui-this">
+                  <a lay-href="gr_xinxi.html">了解若依</a>
+                </dd>
+              </dl>
+            </li>
+						
+
+            <li data-name="template" class="layui-nav-item">
+              <a href="javascript:;" lay-tips="系统管理" lay-direction="2">
+                <i class="layui-icon layui-icon-template"></i>
+                <cite>系统管理</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd><a lay-href="yonghu_gl.html">用户管理</a></dd>
+                <dd><a lay-href="jiaos_gl.html">角色管理</a></dd>
+                <dd><a lay-href="caidan_gl.html">菜单管理</a></dd>
+                <dd><a lay-href="bm_gl.html">部门管理</a></dd>
+                <dd><a lay-href="gw_gl.html">岗位管理</a></dd>
+                <dd><a lay-href="zidian_gl.html">字典管理</a></dd>
+				<dd><a lay-href="rizhi_gl.html">参数设置</a></dd>
+				<dd><a lay-href="tongzhi_gg.html">通知公告</a></dd>
+				<dd><a lay-href="chuanshu_sz.html">日志管理</a></dd>
+				<dd><a lay-href="denglu_rz.html">登录日志</a></dd>A
+              </dl>
+			  
+            </li>
+						
+						<li data-name="user" class="layui-nav-item">
+						  <a href="javascript:;" lay-tips="系统监控" lay-direction="2">
+						    <i class="layui-icon layui-icon-user"></i>
+						    <cite>系统监控</cite>
+						  </a>
+						  <dl class="layui-nav-child">
+						    <dd>
+						      <a lay-href="zaixian_rw.html">在线用户</a>
+						    </dd>
+						    <dd>
+						      <a lay-href="ds_rw.html">定时任务</a>
+						    </dd>
+						    <dd>
+						      <a lay-href="user/administrators/role.html">数据监控</a>
+						    </dd>
+								<dd>
+								  <a lay-href="wufu_jk.34 html">服务监控</a>
+								</dd>
+						  </dl>
+						</li> 
+						
+							
+            <li data-name="senior" class="layui-nav-item">
+              <a href="javascript:;" lay-tips="系统工具" lay-direction="2">
+                <i class="layui-icon layui-icon-senior"></i>
+                <cite>系统工具</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a layadmin-event="im">LayIM 通讯系统</a>  
+                </dd>
+                <dd data-name="echarts">
+                  <a href="javascript:;">Echarts集成</a>
+                  <dl class="layui-nav-child">
+                    <dd><a lay-href="senior/echarts/line.html">折线图</a></dd>
+                    <dd><a lay-href="senior/echarts/bar.html">柱状图</a></dd>
+                    <dd><a lay-href="senior/echarts/map.html">地图</a></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+						
+								
+            <li data-name="user" class="layui-nav-item">
+              <a href="javascript:;" lay-tips="实例演示" lay-direction="2">
+                <i class="layui-icon layui-icon-user"></i>
+                <cite>实例演示</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a lay-href="user/user/list.html">网站用户</a>
+                </dd>
+                <dd>
+                  <a lay-href="user/administrators/list.html">后台管理员</a>
+                </dd>
+                <dd>
+                  <a lay-href="user/administrators/role.html">角色管理</a>
+                </dd>
+              </dl>
+            </li>  
+          </ul>
+					
+        </div>
+      </div>
+
+      <!-- 页面标签 -->
+      <div class="layadmin-pagetabs" id="LAY_app_tabs">
+        <div class="layui-icon layadmin-tabs-control layui-icon-prev" layadmin-event="leftPage"></div>
+        <div class="layui-icon layadmin-tabs-control layui-icon-next" layadmin-event="rightPage"></div>
+        <div class="layui-icon layadmin-tabs-control layui-icon-down">
+          <ul class="layui-nav layadmin-tabs-select" lay-filter="layadmin-pagetabs-nav">
+            <li class="layui-nav-item" lay-unselect>
+              <a href="javascript:;"></a>
+              <dl class="layui-nav-child layui-anim-fadein">
+                <dd layadmin-event="closeThisTabs"><a href="javascript:;">关闭当前标签页</a></dd>
+                <dd layadmin-event="closeOtherTabs"><a href="javascript:;">关闭其它标签页</a></dd>
+                <dd layadmin-event="closeAllTabs"><a href="javascript:;">关闭全部标签页</a></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="layui-tab" lay-unauto lay-allowClose="true" lay-filter="layadmin-layout-tabs">
+          <ul class="layui-tab-title" id="LAY_app_tabsheader">
+            <li lay-id="home/console.html" lay-attr="home/console.html" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <!-- 主体内容 -->
+      <div class="layui-body" id="LAY_app_body">
+       <!-- <div class="layadmin-tabsbody-item layui-show">
+          <iframe src="home/console.html" frameborder="0" class="layadmin-iframe"></iframe>
+        </div> -->
+      </div>
+      
+      <!-- 辅助元素，一般用于移动设备下遮罩 -->
+      <div class="layadmin-body-shade" layadmin-event="shade"></div>
+    </div>
+  </div>
+
+  <script src="../layuiadmin/layui/layui.js"></script>
+  <script>
+		layui.config({
+			 base: '../layuiadmin/' //静态资源所在路径
+		}).extend({
+			 index: 'lib/index' //主入口模块
+		}).use('index');
+  </script>
+  
+</body>
+</html>
+
+

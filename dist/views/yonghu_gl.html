@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../layuiadmin/layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="../layuiadmin/style/admin.css" media="all">
+		<link rel="stylesheet" href="../layuiadmin/style/xiangmu.css" media="all">
+		<link rel="stylesheet" href="../layuiadmin/style/global.css" media="all">
+	</head>
+
+	<body>
+		<script src="js/mui.js"></script>
+			
+			<div class="yonghu_ring">
+				<div class="yonghu_leng"><img src="../img/jia1.png"></div>
+				<div class="yonghu_ji1">
+				<div class="yonghu_j1">登录名称：<input type="text" name="title" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input"></div>
+				<div class="yonghu_j1">手机号码：<input type="text" name="title" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input"></div>
+				<div class="yonghu_j1">用户状态：<select name="city" lay-verify="">  
+																		<option value="">所以</option>
+																		<option value="010">北京</option>
+																		<option value="021">上海</option>
+																		<option value="0571">杭州</option>
+																		</select>
+</div>
+		<div class="yonghu_jia2">
+			<div class="yonghu_j2">
+				<div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label" style="line-height: 10px;">创建时间:</label>
+              <div class="layui-input-inline" style="width: 100px;">
+                <input type="text" name="price_min" placeholder="开始时间" autocomplete="off" class="layui-input">
+              </div>
+              <div class="layui-form-mid">-</div>
+              <div class="layui-input-inline" style="width: 100px;">
+                <input type="text" name="price_max" placeholder="结束时间" autocomplete="off" class="layui-input">
+              </div>
+			<button class="layui-btn layui-btn-radius" style="height: 30px; line-height: 30px;">默认按钮</button>
+			  <button class="layui-btn layui-btn-radius" style="height: 30px; line-height: 30px;">默认按钮</button>
+            </div>
+          </div>
+			</div>
+		</div>
+		<div class="yonghu_jia1">
+			<div class="jia2">
+				<button type="button" class="layui-btn" style="border-radius:5px;" > <i class="layui-icon">&#xe608;</i> 添加</button>
+				<button type="button" class="layui-btn" style="border-radius:5px;background-color: red;"> <i class="layui-icon">&#xe608;</i> 添加</button>
+				<button type="button" class="layui-btn" style="border-radius:5px;"> <i class="layui-icon">&#xe608;</i> 添加</button>
+				<button type="button" class="layui-btn" style="border-radius:5px;"> <i class="layui-icon">&#xe608;</i> 添加</button>
+				<button type="button" class="layui-btn" style="border-radius:5px;"> <i class="layui-icon">&#xe608;</i> 添加</button>
+		</div>
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td></td>
+						<td><a href="">菜单名称</a></td>
+						<td><a href="">排序</a></td>
+						<td><a href="">请求地址</a></td>
+						<td><a href="">类型</a></td>
+						<td><a href="">可见</a></td>
+						<td><a href="">权限标识</a></td>
+						<td class="last"><a href="">操作</a></td>
+					</tr>
+					<tr class="hover">
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><span class="glyphicon glyphicon-cog"></span>系统管理</td>
+						<td>1</td>
+						<td>#</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">目录</button></td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-radius">显示</button></td>
+						<td></td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								新增
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-danger">
+								<span class="glyphicon glyphicon-remove"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr class="hover">
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><span class="glyphicon glyphicon-facetime-video"></span>系统监控</td>
+						<td>2</td>
+						<td>#</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">目录</button></td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-radius">显示</button></td>
+						<td></td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								新增
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-danger">
+								<span class="glyphicon glyphicon-remove"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr class="hover">
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><span class="glyphicon glyphicon-menu-hamburger"></span>系统工具</td>
+						<td>3</td>
+						<td>#</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">目录</button></td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-radius">显示</button></td>
+						<td></td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								新增
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-danger">
+								<span class="glyphicon glyphicon-remove"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		</div>
+		<script src="../layuiadmin/layui/layui.js"></script>
+				
+				<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
